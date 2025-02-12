@@ -157,12 +157,4 @@
 <img src="img/Ejercicio22.drawio.png">
 
 
-## <span style="color:red;">*Ejercicio 24*</span>
-
-### En un sistema de ventas, cada factura está asociada a un cliente y un producto, donde la combinación de ambos forma una clave compuesta. Diseña las tablas para modelar esta relación.
-
-<img src="img/Ejercicio23.drawio.png">
-
-
-
 </div>
