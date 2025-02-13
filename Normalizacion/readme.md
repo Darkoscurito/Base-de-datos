@@ -78,7 +78,7 @@
 
 #### *__PROBLEMA:__* En la columna de los *__Teléfonos__* tiene valores multivaluados incumpliendo el 1FN.
 
-### Aplicando 1FN 
+### Aplicamos 1FN 
 
 #### Tabla: Teléfono
 
@@ -104,7 +104,7 @@
 
 #### *__PROBLEMA:__* En la columna de las *__fechas__* tiene valores multivaluados incumpliendo el 1FN.
 
-### Aplicando 1FN
+### Aplicamos 1FN
 
 ##### Nueva Tabla: Fechas_Reservas
 
@@ -131,7 +131,7 @@
 
 #### *__PROBLEMA:__* En la columna de los *__horarios__* tiene valores multivaluados incumpliendo el 1FN.
 
-### Aplicando 1FN
+### Aplicamos 1FN
 
 #### Tabla: Horarios
 
@@ -156,7 +156,7 @@
 
 #### *__PROBLEMA:__* En la columna de los *__Productos Comprados__*  tiene valores multivaluados incumpliendo el 1FN.
 
-### Aplicando 1FN
+### Aplicamos 1FN
 
 #### Tabla: Producto
 
@@ -181,7 +181,7 @@
 
 #### *__PROBLEMA:__* En este caso particular en la columna *__autores__* no da problemas. Pero lo podrias dar a futuro en caso de que un libro tengo mas de un autor.
 
-### Aplicando 1FN 
+### Aplicamos 1FN 
 
 ####  Tabla: Autores
 | ID_Autor | Nombre_Autor |
@@ -204,7 +204,7 @@
 
 #### *__PROBLEMA:__* En la columna de los *__Servicios Contradados__* tiene valores multivaluados incumpliendo el 1FN.
 
-#### Aplicando 1FN
+#### Aplicamos 1FN
 
 #### Nueva Tabla: Servicios Contratados
 | ID_Servicio | Nombre_Servicio | Costo |
@@ -228,7 +228,7 @@
 
 ### *__PROBLEMA:__* En la columna de los *__Modelos__* tiene valores multivaluados incumpliendo el 1FN.
 
-#### Aplicando 1FN 
+#### Aplicamos 1FN 
 
 ##### Nueva Tabla: Modelos
 
@@ -251,7 +251,7 @@
 
 ### *__PROBLEMA:__* En la columna de los *__Miembros__* tiene valores multivaluados incumpliendo el 1FN.
 
-### Aplicando 1FN 
+### Aplicamos 1FN 
 
 #### Nueva Tabla: Miembro
 | ID_Proyecto | ID_Miembro | Nombre_Miembro | 
