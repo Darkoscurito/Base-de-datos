@@ -18,13 +18,32 @@
 
 ### Aplicamos 1FN para arreglarlo.
 
-#### Nueva Tabla: Proveedores
+| ID_Producto | Nombre_Producto | Proveedores | Categoría   | Precio |
+| ----------- | ----------------| ------------| ------------| ------ |
+| 1           | Laptop          | Dell        | Tecnología  | 1000   |
+| 1           | Laptop          | HP          | Tecnología  | 25     |
+| 2           | Mouse           | Logitech    | Accesorios  | 25     |
 
-| id_proveedor | nombreProveedor  |
-| ------------ | ---------------- |
+### Aplicamos 2FN ahora para eliminar dependencias.
+
+
+#### Nueva Tabla: Producto
+
+| ID_Producto | Nombre_Producto | Categoría  | Precio |
+|-------------|-----------------|------------|--------|
+| 1           | Laptop          | Tecnología | 1000   |
+| 2           | Mouse           | Accesorios | 25     |
+
+#### Nueva Tabla: Proveedor
+
+| ID_Proveedor | Nombre_Proveedor |
+|--------------|------------------|
 | 1            | Dell             |
 | 2            | HP               |
 | 3            | Logitech         |
+
+
+
 
 <img src="img/Ejercicio01.drawio.png">
 
@@ -39,28 +58,29 @@
 
 #### *__PROBLEMA:__* (Dependencias funcionales) Los datos del cliente y del producto deben almacenarse por separado para evitar dependencias.
 
-### Aplicamos 2FN
+### Aplicamos 2FN ahora para eliminar dependencias.
 
-#### Tabla: Productos
+#### Nueva Tabla: Cliente
 
-| ID_Producto | nombreProducto  | Precio |
-| ----------- | --------------- | ------ |
-| 1           | Laptop          | 1000   |
-| 2           | Teclado         | 50     |
-
-#### Tabla: Cliente
-
-| ID_Cliente | nombreCliente  | Dirección    |
-| ---------- | -------------- | ------------ |
+| ID_Cliente | Nombre_Cliente | Dirección    |
+|------------|----------------|--------------|
 | 1          | Juan Pérez     | Calle 123    |
 | 2          | Ana López      | Av. Central  |
 
-#### Tabla: Pedido
+#### Nueva Tabla: Pedido
 
-| ID_Pedido | Cantidad |
-| --------- | -------- |
-| 101       | 1        |
-| 102       | 2        |
+| ID_Pedido | ID_Cliente | Fecha_Pedido |
+|-----------|------------|--------------|
+| 101       | 1          | 2023-10-01   |
+| 102       | 2          | 2023-10-02   |
+
+#### Nueva Tabla: Producto
+
+| ID_Producto | Nombre_Producto | Precio |
+|-------------|-----------------|--------|
+| 1           | Laptop          | 1000   |
+| 2           | Teclado         | 25     |
+
 
 
 <img src="img/Ejercicio02.drawio.png">
@@ -80,13 +100,29 @@
 
 ### Aplicamos 1FN 
 
-#### Tabla: Teléfono
+| ID_Empleado | Nombre    | Teléfonos      | Departamento |
+| ----------- | --------- | -------------- | ------------ |
+| 1           | Carlos R. | 12345          | Ventas       |
+| 1           | Carlos R. | 67890          | Ventas       |
+| 2           | Laura M.  | 54321          | Finanzas     |
 
-| ID_Teléfono | ID_Empleado | Número |
-| ----------- | ----------- | ------ |
-| 1           | 1           | 12345  |
-| 2           | 1           | 67890  |
-| 3           | 2           | 54321  |
+### Aplicamos 2FN ahora para eliminar dependencias.
+
+#### Nueva Tabla: Empleado
+
+| ID_Empleado | Nombre    | Departamento |
+|-------------|-----------|--------------|
+| 1           | Carlos R. | Ventas       |
+| 2           | Laura M.  | Finanzas     |
+
+#### Nueva Tabla: Telefono
+
+| ID_Telefono | ID_Empleado | Número_Teléfono |
+|-------------|-------------|-----------------|
+| 1           | 1           | 12345           |
+| 2           | 1           | 67890           |
+| 3           | 2           | 54321           |
+
 
 
 <img src="img/Ejercicio03.drawio.png">
@@ -105,16 +141,27 @@
 #### *__PROBLEMA:__* En la columna de las *__fechas__* tiene valores multivaluados incumpliendo el 1FN.
 
 ### Aplicamos 1FN
+| ID_Reserva | Cliente   | Habitación | Fechas             | Precio |
+| ---------- | --------- | ---------- | ------------------ | ------ |
+| 5001       | Pedro G.  | 101        | 01/02              | 300    |
+| 5001       | Pedro G.  | 101        | 02/02              | 300    |
+| 5001       | Pedro G.  | 101        | 03/02              | 300    |
+| 5002       | María T.  | 202        | 10/03              | 200    |
+| 5002       | María T.  | 202        | 11/03              | 200    |
 
-##### Nueva Tabla: Fechas_Reservas
 
-| ID_Reserva | Fecha  |
-| ---------- | ------ |
-| 5001       | 01/02  |
-| 5001       | 02/02  |
-| 5001       | 03/02  |
-| 5002       | 10/03  |
-| 5002       | 11/03  |
+### Aplicamos 2FN ahora para eliminar dependencias.
+
+#### Nueva Tabla: Reserva
+
+| ID_Reserva | Cliente   | Habitación | Precio |
+|------------|-----------|------------|--------|
+| 5001       | Pedro G.  | 101        | 300    |
+| 5002       | María T.  | 202        | 200    |
+
+
+
+
 
 
 <img src="img/Ejercicio04.drawio.png">
@@ -133,13 +180,42 @@
 
 ### Aplicamos 1FN
 
-#### Tabla: Horarios
+| ID_Inscripción | Estudiante | Curso       | Profesor    | Horarios                 |
+| -------------- | ---------- | ----------- | ----------- | ------------------------ |
+| 3001           | Luis R.    | Matemáticas | Prof. Pérez | Lunes 10AM               |
+| 3001           | Luis R.    | Matemáticas | Prof. Pérez | Miércoles 2PM            |
+| 3002           | Ana S.     | Física      | Prof. Gómez | Martes 3PM               |
 
-| ID_Horario | ID_Inscripción | Día        | Horarios |
-| ---------- | -------------- | ---------- | -------- |
-| 1          | 3001           | Lunes      | 10AM     |
-| 2          | 3001           | Miércoles  | 2PM      |
-| 3          | 3002           | Martes     | 3PM      |
+
+### Aplicamos 2FN ahora para eliminar dependencias.
+
+#### Nueva Tabla: Estudiante
+
+| ID_Estudiante | Nombre_Estudiante |
+|---------------|-------------------|
+| 1             | Luis R.           |
+| 2             | Ana S.            |
+
+#### Nueva Tabla: Curso
+
+| ID_Curso | Nombre_Curso |
+|----------|--------------|
+| 1        | Matemáticas  |
+| 2        | Física       |
+
+#### Nueva Tabla: Profesor
+
+| ID_Profesor | Nombre_Profesor |
+|-------------|-----------------|
+| 1           | Prof. Pérez     |
+| 2           | Prof. Gómez     |
+
+#### Nueva Tabla: Inscripcion
+
+| ID_Inscripcion | ID_Estudiante | ID_Curso | ID_Profesor |
+|----------------|---------------|----------|-------------|
+| 3001           | 1             | 1        | 1           |
+| 3002           | 2             | 2        | 2           |
 
 
 <img src="img/Ejercicio05.drawio.png">
@@ -158,13 +234,38 @@
 
 ### Aplicamos 1FN
 
-#### Tabla: Producto
+| ID_Venta | Cliente    | Productos Comprados | Total |
+| -------- | ---------- | ------------------- | ----- |
+| 8001     | Juan P.    | Celular             | 500   |
+| 8001     | Juan P.    | Funda               | 500   |
+| 8002     | Andrea M.  | Laptop              | 1000  |
+
+
+### Aplicamos 2FN ahora para eliminar dependencias.
+
+#### Nueva Tabla: Cliente
+
+| ID_Cliente | Nombre_Cliente |
+|------------|----------------|
+| 1          | Juan P.        |
+| 2          | Andrea M.      |
+
+#### Nueva Tabla: Venta
+
+| ID_Venta | ID_Cliente | Total |
+|----------|------------|-------|
+| 8001     | 1          | 500   |
+| 8002     | 2          | 1000  |
+
+#### Nueva Tabla: Producto
 
 | ID_Producto | Nombre_Producto | Precio |
-| ----------- | --------------- | ------ |
+|-------------|-----------------|--------|
 | 1           | Celular         | 400    |
 | 2           | Funda           | 100    |
 | 3           | Laptop          | 1000   |
+
+
 
 
 <img src="img/Ejercicio06.drawio.png">
@@ -181,13 +282,22 @@
 
 #### *__PROBLEMA:__* En este caso particular en la columna *__autores__* no da problemas. Pero lo podrias dar a futuro en caso de que un libro tengo mas de un autor.
 
-### Aplicamos 1FN 
+### Aplicamos 2FN ahora para eliminar dependencias.
 
-####  Tabla: Autores
+#### Nueva Tabla: Libro
+
+| ID_Libro | Título       | Género          |
+|----------|--------------|-----------------|
+| 101      | El Quijote   | Novela          |
+| 102      | 1984         | Ciencia Ficción |
+
+#### Nueva Tabla: Autor
 | ID_Autor | Nombre_Autor |
-| -------- | -------------|
+|----------|--------------|
 | 1        | Cervantes    |
 | 2        | Orwell       |
+
+
 
 
 <img src="img/Ejercicio07.drawio.png">
@@ -206,12 +316,37 @@
 
 #### Aplicamos 1FN
 
-#### Nueva Tabla: Servicios Contratados
-| ID_Servicio | Nombre_Servicio | Costo |
-| ----------- | --------------- | ----- |
-| 1           | Internet        | 30    |
-| 2           | TV              | 20    |
-| 3           | Teléfono        | 20    |
+| ID_Factura | Cliente    | Servicios Contratados | Costo Total |
+| ---------- | ---------- | --------------------- | ----------- |
+| 9001       | Juan P.    | Internet              | 50          |
+| 9001       | Juan P.    | TV                    | 50          |
+| 9002       | Ana M.     | Teléfono              | 20          |
+
+
+### Aplicamos 2FN ahora para eliminar dependencias.
+
+#### Nueva Tabla: Cliente
+
+| ID_Cliente | Nombre_Cliente |
+|------------|----------------|
+| 1          | Juan P.        |
+| 2          | Ana M.         |
+
+#### Nueva Tabla: Factura
+
+| ID_Factura | ID_Cliente | Costo_Total |
+|------------|------------|-------------|
+| 9001       | 1          | 50          |
+| 9002       | 2          | 20          |
+
+#### Nueva Tabla: Servicio
+
+| ID_Servicio | Nombre_Servicio |
+|-------------|-----------------|
+| 1           | Internet        |
+| 2           | TV              |
+| 3           | Teléfono        |
+
 
 
 <img src="img/Ejercicio08.drawio.png">
@@ -228,15 +363,30 @@
 
 ### *__PROBLEMA:__* En la columna de los *__Modelos__* tiene valores multivaluados incumpliendo el 1FN.
 
-#### Aplicamos 1FN 
+### Aplicamos 1FN 
 
-##### Nueva Tabla: Modelos
+| ID_Vehículo | Marca   | Modelos         | Año  |
+| ----------- | ------- | --------------- | ---- |
+| 5001        | Toyota  | Corolla         | 2022 |
+| 5001        | Toyota  | Yaris           | 2022 |
+| 5002        | Honda   | Civic           | 2023 |
 
-| ID_Vehículo | ID_Modelo | Nombre_Modelo |
-|-------------|-----------|---------------| 
-| 5001        | 1         | Corolla       | 
-| 5001        | 2         | Yaris         | 
-| 5002        | 3         | Civic         |
+### Aplicamos 2FN ahora para eliminar dependencias.
+
+#### Nueva Tabla: Marca
+
+| ID_Marca | Nombre_Marca |
+|----------|--------------|
+| 1        | Toyota       |
+| 2        | Honda        |
+
+#### Nueva Tabla: Modelo
+
+| ID_Modelo | ID_Marca | Nombre_Modelo | Año  |
+|-----------|----------|---------------|------|
+| 1         | 1        | Corolla       | 2022 |
+| 2         | 1        | Yaris         | 2022 |
+| 3         | 2        | Civic         | 2023 |
 
 
 <img src="img/Ejercicio09.drawio.png">
@@ -253,13 +403,31 @@
 
 ### Aplicamos 1FN 
 
-#### Nueva Tabla: Miembro
-| ID_Proyecto | ID_Miembro | Nombre_Miembro | 
-| ----------- | ---------- | -------------- |
-| 7001        | 1          | Juan           |
-| 7001        | 2          | Ana            |
-| 7002        | 3          | Pedro          |
-| 7002        | 4          | María          |
+| ID_Proyecto | Nombre     | Miembros       | Presupuesto |
+| ----------- | ---------- | -------------- | ----------- |
+| 7001        | Web App    | Juan           | 5000        |
+| 7001        | Web App    | Ana            | 5000        |
+| 7002        | E-commerce | Pedro          | 10000       |
+| 7002        | E-commerce | María          | 10000       |
+
+### Aplicamos 2FN ahora para eliminar dependencias.
+
+#### Nueva Tabla: Proyecto
+
+| ID_Proyecto | Nombre     | Presupuesto |
+|-------------|------------|-------------|
+| 7001        | Web App    | 5000        |
+| 7002        | E-commerce | 10000       |
+
+#### Nueva Tabla: Empleado
+
+| ID_Miembros | Nombre_Empleado |
+|-------------|-----------------|
+| 1           | Juan            |
+| 2           | Ana             |
+| 3           | Pedro           |
+| 4           | María           |
+
 
 
 <img src="img/Ejercicio10.drawio.png">
