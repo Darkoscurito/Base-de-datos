@@ -1,6 +1,6 @@
 <div align="justify">
 
-# **Unidad 2 Tarea 3**   dadadawdawdawdawdawdawdawdawdasdawdawdawd
+# **Unidad 2 Tarea 3**
 
 
 ## *__Ejercicio 1__*
