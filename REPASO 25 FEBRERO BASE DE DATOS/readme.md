@@ -14,12 +14,15 @@ Por tanto, la regla más importante que tenemos siempre va ser
 
 <br><br><br><br>
 
-</font>
 
 
-<u><font size="6">**__No duplicar información__**</font></u>
 
-<font size="4">
+# No duplicar información
+
+
+
+
+
 
 <br><br><br><br>
 
