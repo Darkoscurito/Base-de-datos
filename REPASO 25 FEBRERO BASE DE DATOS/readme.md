@@ -49,7 +49,7 @@ El modelo que vamos a representar es el modelo **CHEN** que tienen las siguiente
  
 <br><br>
 
-- **Fuertes (independientes):** Existen por sí mismas. Ejemplo: Cliente, Producto.
+- **Fuertes (independientes):** Existen por sí mismas. **Ejemplo: Cliente, Producto.**
 
 <br><br>
 
