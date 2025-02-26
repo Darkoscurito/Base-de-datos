@@ -1,6 +1,6 @@
  <div align="justify"> 
 
-# **__(Unidad-4) (Tarea-7)__** (Normalización)
+# **(Unidad-4) (Tarea-7)** (Normalización)
 
 
 ## __Ejercicio: Gestión Tienda__
