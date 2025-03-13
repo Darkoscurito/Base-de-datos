@@ -55,7 +55,7 @@
 
 ## **Solucion**
 
-<img src="img/paso3 (2).png>
+<img src="img/paso3 (2).png">
 
 <br>
 
