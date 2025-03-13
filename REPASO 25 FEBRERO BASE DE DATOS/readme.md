@@ -69,7 +69,7 @@ El modelo que vamos a representar es el modelo **CHEN** que tienen las siguiente
 
 <br><br><br><br>
 
-2. **Relación** <img src="img/imagen1.png" width="20" height="20" style="vertical-align: middle; margin-top: -4px;"> : Las relaciones se identifican por el verbo y como la propia palabra indica, tiene que tener relación con las **2 entidades**
+2. **Relación** <img src="img/imagen1.png" width="20" height="20" style="vertical-align: middle;"> : Las relaciones se identifican por el verbo y como la propia palabra indica, tiene que tener relación con las **2 entidades** 
 
 ### \- Ejemplo 1: COMPRA
 
