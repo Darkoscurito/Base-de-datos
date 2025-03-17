@@ -104,15 +104,15 @@ INSERT INTO ventas (id_producto, cantidad, fecha) VALUES
 
 __Primera Forma Normal (1NF):__
 
-Todas los valores son atómicos y no hay valores multivaluados.
+Todos los valores son __atómicos__ y no hay valores  __multivaluados__.
 
 __Segunda Forma Normal (2NF):__
 
-Cada tabla tiene una clave primaria (id en ambas tablas) y los atributos dependen de la clave primaria.
+Cada tabla tiene una clave primaria (id en ambas tablas) y los atributos dependen de la clave primaria (no hay __dependencias parciales__).
 
 __Tercera Forma Normal (3NF):__
 
-No existen dependencias transitivas en ninguna de las 2 tablas y los atributos dependen exclusivamente de la clave primaria
+No existen __dependencias transitivas__ en ninguna de las 2 tablas y los atributos dependen exclusivamente de la clave primaria
 
 
 ### __Paso 4:__ Responde a las siguientes cuestiones
