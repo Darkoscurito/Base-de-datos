@@ -112,7 +112,7 @@ INSERT INTO ventas (id_producto, cantidad, fecha) VALUES
 
  - __FROM:__  Tabla en la que te encuentras
 
- - __WHERE:__ Condiciones que se tienen que cumplir para ejecutarse
+ - __WHERE:__ Condiciones que se tienen que cumplir para ejecutarse ⬇️
 
  <img src="img/operadorWhere.png">
 
@@ -203,6 +203,7 @@ SELECT * FROM registros WHERE dato REGEXP '^[A-Z]{3}[0-9]{4}$';
 
 
 ## Continuará
+
 
 
 
