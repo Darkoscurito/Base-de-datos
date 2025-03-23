@@ -1,4 +1,4 @@
-# __Unidad 3 Tarea 5__ EXPRESIONES REGULARES
+# <img src="img/SQL.png" height=20px width=20px><img src="img/SQL.png" height=20px width=20px> __Unidad 3 Tarea 5__ EXPRESIONES REGULARES <img src="img/SQL.png" height=20px width=20px><img src="img/SQL.png" height=20px width=20px>
 
 
 ### Operadores en expresiones regulares
