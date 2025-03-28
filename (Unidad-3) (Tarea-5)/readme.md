@@ -266,7 +266,7 @@ regex = java
 
 ### __31.__ Obtener todos los autores cuyo nombre empieza con "M" o termina con "n":
 
-__REGEXP '^M' OR nombre REGEXP 'n$'__
+
 
 <img src="img/Ejercicio(31).png">
 
