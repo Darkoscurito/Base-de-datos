@@ -4,7 +4,9 @@
 # __Unidad 3 Tarea 6__
 
 
-### 📜📜 Operadores en expresiones regulares 📜📜
+### 📜📜 FUNCIONES Y EXPRESIONES REGULARES (SQL) 📜📜
+
+## EXPRESIONES REGULARES (SQL)
 
 | Operador  | Descripción                                      | Ejemplo                |
 |-----------|--------------------------------------------------|------------------------|
@@ -23,13 +25,29 @@
 | `\s`      | Coincide con un carácter de espacio en blanco     | `\s*` coincide con cero o más espacios en blanco. |
 | `|`       | Operador lógico "o"                               | `a|b` coincide con "a" o "b". |
 
+## FUNCIONES (SQL)
 
+| Categoría                   | Función                           | Descripción                                               |
+|-----------------------------|-----------------------------------|-----------------------------------------------------------|
+| **Funciones de Texto**      | `LENGTH(str)`                     | Devuelve la longitud de la cadena.                         |
+|                             | `SUBSTR(str, start, length)`       | Devuelve una subcadena de la cadena dada.                 |
+|                             | `UPPER(str)`, `LOWER(str)`         | Convierte la cadena a mayúsculas o minúsculas.            |
+| **Funciones Numéricas**     | `ABS(x)`                          | Devuelve el valor absoluto de x.                           |
+|                             | `ROUND(x)`, `CEIL(x)`, `FLOOR(x)` | Redondeo de números.                                      |
+|                             | `MAX(x, y, ...)`, `MIN(x, y, ...)` | Devuelve el valor máximo o mínimo entre los argumentos.   |
+| **Funciones de Fecha y Hora**| `CURRENT_DATE`, `CURRENT_TIME`, `CURRENT_TIMESTAMP` | Devuelven la fecha, la hora o la marca de tiempo actuales. |
+|                             | `DATE(str)`, `TIME(str)`, `DATETIME(str)` | Extraen partes de una fecha o marca de tiempo.             |
+| **Funciones de Agregación**  | `SUM(column)`, `AVG(column)`      | Realizan operaciones de suma y promedio en una columna.    |
+|                             | `COUNT(column)`, `MAX(column)`, `MIN(column)` | Realizan operaciones de conteo, máximo y mínimo en una columna. |
+| **Funciones de Conversión**  | `CAST(expr AS type)`              | Convierte una expresión a un tipo de datos específico.    |
+| **Funciones de Manipulación de Cadenas** | `CONCAT(str1, str2, ...)`  | Concatena cadenas.                                        |
+| **Funciones de Control de Flujo** | `CASE WHEN condition THEN result END` | Realiza evaluaciones condicionales.                       |
 
 ### __1.__ Obtener todos los clientes.
 
 
 
-<img src="img">
+<img src="img/ejercicio(1).png">
 
 <br>
 
@@ -37,13 +55,13 @@
 
 
 
-<img src="img">
+<img src="img/ejercicio(2).png">
 
 <br>
 
 ### __3.__ Obtener el precio promedio de los productos.
 
-<img src="img">
+<img src="img/ejercicio(3).png">
 
 <br>
 
@@ -51,14 +69,14 @@
 
 
 
-<img src="img">
+<img src="img/ejercicio(4).png">
 
 <br>
 
 ### __5.__ Obtener el producto más caro.
 
 
-<img src="img">
+<img src="img/ejercicio(5).png">
 
 <br>
 
@@ -66,7 +84,7 @@
 
 
 
-<img src="img">
+<img src="img/ejercicio(6).png">
 
 <br>
 
@@ -74,7 +92,7 @@
 
 
 
-<img src="img">
+<img src="img/ejercicio(7).png">
 
 <br>
 
@@ -82,7 +100,7 @@
 
 
 
-<img src="img">
+<img src="img/ejercicio(8).png">
 
 <br>
 
@@ -90,14 +108,14 @@
 
 
 
-<img src="img">
+<img src="img/ejercicio(9).png">
 
 <br>
 
 ### __10.__ Obtener la fecha del primer pedido realizado:
 
 
-<img src="img">
+<img src="img/ejercicio(10).png">
 
 <br>
 
@@ -105,7 +123,7 @@
 
 
 
-<img src="img">
+<img src="img/ejericicio(11).png">
 
 <br>
 
@@ -113,7 +131,7 @@
 
 
 
-<img src="img">
+<img src="img/ejercicio(12).png">
 
 <br>
 
@@ -121,7 +139,7 @@
 
 
 
-<img src="img">
+<img src="img/ejercicio(13).png">
 
 <br>
 
@@ -129,7 +147,7 @@
 
 
 
-<img src="img">
+<img src="img/ejercicio(14).png">
 
 <br>
 
@@ -137,7 +155,7 @@
 
 
 
-<img src="img">
+<img src="img/ejercicio(15).png">
 
 <br>
 
@@ -145,7 +163,7 @@
 
 
 
-<img src="img">
+<img src="img/ejercicio(16).png">
 
 <br>
 
@@ -153,7 +171,7 @@
 
 
 
-<img src="img">
+<img src="img/ejercicio(17).png">
 
 <br>
 
@@ -161,7 +179,7 @@
 
 
 
-<img src="img">
+<img src="img/ejercicio(18).png">
 
 <br>
 
@@ -169,7 +187,7 @@
 
 
 
-<img src="img">
+<img src="img/ejercicio(19).png">
 
 <br>
 
@@ -177,7 +195,7 @@
 
 
 
-<img src="img">
+<img src="img/ejercicio(20).png">
 
 <br>
 
@@ -185,7 +203,7 @@
 
 
 
-<img src="img">
+<img src="img/ejercicio(21).png">
 
 <br>
 
@@ -193,7 +211,7 @@
 
 
 
-<img src="img">
+<img src="img/ejercicio(22).png">
 
 <br>
 
@@ -201,7 +219,7 @@
 
 
 
-<img src="img">
+<img src="img/ejercicio(23).png">
 
 <br>
 
@@ -209,7 +227,7 @@
 
 
 
-<img src="img">
+<img src="img/ejercicio(24).png">
 
 <br>
 
@@ -217,7 +235,7 @@
 
 
 
-<img src="img">
+<img src="img/ejercicio(25).png">
 
 <br>
 
@@ -225,7 +243,7 @@
 
 
 
-<img src="img">
+<img src="img/ejercicio(26).png">
 
 <br>
 
@@ -233,7 +251,7 @@
 
 
 
-<img src="img">
+<img src="img/ejercicio(27).png">
 
 <br>
 
@@ -241,7 +259,7 @@
 
 
 
-<img src="img">
+<img src="img/ejercicio(28).png">
 
 <br>
 
@@ -249,7 +267,7 @@
 
 
 
-<img src="img">
+<img src="img/ejercicio(29).png">
 
 <br>
 
@@ -257,7 +275,7 @@
 
 
 
-<img src="img">
+<img src="img/ejercicio(30).png">
 
 <br>
 
@@ -265,37 +283,34 @@
 
 
 
-<img src="img">
+<img src="img/ejercicio(31).png">
 
 <br>
 
 ### __32.__ Obtener los productos cuyo precio tenga al menos 4 números sin contrar los decimales.
 
 
-<img src="img">
+<img src="img/ejercicio(32).png">
 
 ### __33.__ Obtener los clientes cuyos nombres tienen al menos una 'a' seguida de una 'e'.
 
 
 
-<img src="img">
+<img src="img/ejercicio(33).png">
 
 <br>
 
 ### __34.__ Obtener los productos cuyos nombres terminan con una consonante.
 
 
-<img src="img">
+<img src="img/ejercicio(34).png">
 
 ### __35.__ Obtener los productos cuyos nombres empiezan con una vocal.
 
 
 
-<img src="img">
+<img src="img/ejercicio(35).png">
 
 <br>
-
-
-
 
 </div>
