@@ -1,7 +1,7 @@
 <div align="justify">
 
 
-# __Unidad 3 Tarea 6__
+# __Unidad 3 Tarea 6__ (Expresiones Regulares y Funciones)
 
 
 ### 📜📜 FUNCIONES Y EXPRESIONES REGULARES (SQL) 📜📜

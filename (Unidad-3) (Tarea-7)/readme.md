@@ -1,8 +1,8 @@
 <div align="justify">
 
-# 📥📥 __Unidad 3 Tarea 7__ 📥📥
+# 📥📥 __Unidad 3 Tarea 7__ (Funciones y Subconsultas)📥📥
 
-## 📜📜 FUNCIONES MATEMATICAS SQL 📜📜
+## 📜📜 SUBCONSULTAS CON FUNCIONES 📜📜
 
 | Categoría                   | Función                           | Descripción                                               |
 |-----------------------------|-----------------------------------|-----------------------------------------------------------|
@@ -60,7 +60,7 @@
 
 <br>
 
-### __6.__ Mostrar los clientes que han comprado al menos un coche (un coche o más) y la cantidad de coches comprados.
+### __6.__ Encontrar el modelo de coche más caro.
 
 
 <img src="img/ejercicio06.png">
@@ -68,7 +68,7 @@
 
 <br>
 
-### __7.__ Encontrar los clientes que han comprado coches de la marca 'Toyota':
+### __7.__ Mostrar los clientes que han comprado al menos un coche y la cantidad de coches comprados
 
 
 <img src="img/ejercicio07.png">
@@ -76,7 +76,7 @@
 
 <br>
 
-### __8.__ Calcular el promedio de edad de los clientes que han comprado coches de más de 25,000.
+### __8.__ Encontrar los clientes que han comprado coches de la marca 'Toyota'
 
 
 <img src="img/ejercicio08.png">
@@ -84,7 +84,7 @@
 
 <br>
 
-### __9.__ Mostrar los modelos de coches y sus precios que fueron comprados por clientes mayores de 30 años.
+### __9.__ Calcular el promedio de edad de los clientes que han comprado coches de más de 25,000
 
 
 <img src="img/ejercicio09.png">
@@ -92,14 +92,14 @@
 
 <br>
 
-### __10.__ Obtener todos los autores cuyo nombre termina con "ez":
+### __10.__ Mostrar los modelos de coches y sus precios que fueron comprados por clientes mayores de 30 años
 
 <img src="img/ejercicio10.png">
 
 
 <br>
 
-### __11.__ Encontrar los coches vendidos en el año 2022 junto con la cantidad total de ventas en ese año.
+### __11.__ Encontrar los coches vendidos en el año 2022 junto con la cantidad total de ventas en ese año
 
 
 <img src="img/ejercicio11.png">
@@ -107,7 +107,7 @@
 
 <br>
 
-### __12.__ Listar los coches cuyos precios son mayores que el precio promedio de coches vendidos a clientes menores de 30 años.
+### __12.__ Listar los coches cuyos precios son mayores que el precio promedio de coches vendidos a clientes menores de 30 años
 
 
 <img src="img/ejercicio12.png">
@@ -115,7 +115,7 @@
 
 <br>
 
-### __13.__ Calcular el total de ventas por marca de coche, ordenado de forma descendente por el total de ventas:
+### __13.__ Calcular el total de ventas por marca de coche, ordenado de forma descendente por el total de ventas
 
 
 <img src="img/ejercicio13.png">
