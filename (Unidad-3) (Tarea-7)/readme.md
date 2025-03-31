@@ -1,6 +1,6 @@
 <div align="justify">
 
-# 📥📥 __Unidad 3 Tarea 7__ (Funciones y Subconsultas)📥📥
+#  __Unidad 3 Tarea 7__ (Funciones y Subconsultas)
 
 ## 📜📜 SUBCONSULTAS CON FUNCIONES 📜📜
 
