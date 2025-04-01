@@ -21,7 +21,7 @@
 | **Funciones de Control de Flujo** | `CASE WHEN condition THEN result END` | Realiza evaluaciones condicionales.                       |
 
 
-
+<br>
 
 <details>
 
@@ -100,6 +100,8 @@ INSERT INTO ventas (id_cliente, id_coche, fecha_venta) VALUES
     (10, 10, '2023-10-05');
 ``` 
 </details>
+
+<br>
 
 ## __CONSULTAS__
 
