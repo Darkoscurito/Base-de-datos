@@ -99,7 +99,9 @@ INSERT INTO ventas (id_cliente, id_coche, fecha_venta) VALUES
     (8, 8, '2023-08-25'),
     (10, 10, '2023-10-05');
 ``` 
-</details>  
+</details>
+
+## __CONSULTAS__
 
 
 ### __1.__ Listar los coches vendidos con sus modelos y precios, junto con los nombres de los clientes que los compraron.

@@ -168,6 +168,8 @@ INSERT INTO Pedidos (id_cliente, id_producto, cantidad, fecha_pedido) VALUES
 ``` 
 </details>
 
+## __CONSULTAS__
+
 ### __1.__ Obtener todos los clientes.
 
 
