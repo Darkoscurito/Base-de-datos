@@ -43,7 +43,7 @@
 | **Funciones de Manipulación de Cadenas** | `CONCAT(str1, str2, ...)`  | Concatena cadenas.                                        |
 | **Funciones de Control de Flujo** | `CASE WHEN condition THEN result END` | Realiza evaluaciones condicionales.                       |
 
-<br>
+<br><br>
 
 <details>
 
@@ -169,7 +169,7 @@ INSERT INTO Pedidos (id_cliente, id_producto, cantidad, fecha_pedido) VALUES
 ``` 
 </details>
 
-<br>
+<br><br>
 
 ## __CONSULTAS__
 
