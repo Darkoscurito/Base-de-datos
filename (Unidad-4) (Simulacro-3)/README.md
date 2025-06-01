@@ -404,7 +404,7 @@ usuario_accion VARCHAR(50)
 2. Crear un trigger `AFTER INSERT` sobre `matriculas` que inserte un registro en `auditoria_matriculas` al realizar una matrícula.
 
 ```sql
-DROP TRIGGER IF EXISTS auditoria_matriculas;
+DROP TRIGGER IF EXISTS after_insert_matricula;
 
 DELIMITER //
 
